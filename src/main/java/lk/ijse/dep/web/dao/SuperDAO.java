@@ -1,9 +1,10 @@
 package lk.ijse.dep.web.dao;
 
-import java.sql.Connection;
+import javax.persistence.EntityManager;
 
 public interface SuperDAO {
 
-    public abstract void setConnection(Connection connection) throws Exception;
+
+    void setEntityManager(EntityManager entityManager) throws Exception;
 
 }
