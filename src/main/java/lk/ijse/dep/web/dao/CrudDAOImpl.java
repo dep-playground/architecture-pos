@@ -42,7 +42,7 @@ public class CrudDAOImpl<T extends SuperEntity, K extends Serializable> implemen
 
     @Override
     public List<T> getAll() throws Exception {
-        return entityManager.createQuery("SELECT * FROM "+ entityClass.getName()).getResultList();
+        return entityManager.createQuery("SELECT x FROM "+ entityClass.getName()+ " x").getResultList();
     }
 
     @Override
